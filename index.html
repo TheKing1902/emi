@@ -9,69 +9,219 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
         body {
-            background-color: #f8f9fa; /* Fondo gris claro */
+            background-color: #191414;
+            /* Fondo oscuro similar a Spotify */
+            color: #fff;
+            /* Color de texto blanco */
         }
+
         .card {
-            transition: transform 0.2s ease-in-out; /* Animación de transformación */
+            transition: transform 0.2s ease-in-out;
+            /* Animación de transformación */
         }
+
         .card:hover {
-            transform: scale(1.05); /* Escalar la tarjeta al hacer hover */
+            transform: scale(1.05);
+            /* Escalar la tarjeta al hacer hover */
+        }
+
+        .list-group-item {
+            background-color: #e83e8c;
+            /* Rosa de Spotify */
+            border-color: #e83e8c;
+            /* Rosa de Spotify */
+            color: #fff;
+            /* Texto blanco */
+        }
+
+        .list-group-item:hover {
+            background-color: #d5317f;
+            /* Rosa más oscuro al hacer hover */
+            border-color: #d5317f;
+            /* Rosa más oscuro al hacer hover */
+        }
+
+        .list-group-item:focus {
+            background-color: #d5317f;
+            /* Rosa más oscuro al enfocar */
+            border-color: #d5317f;
+            /* Rosa más oscuro al enfocar */
         }
     </style>
 </head>
 
 <body>
     <div class="container mt-5">
-        <div class="text-center">
-            <h1 class="fw-bold">Todo en esta vida es efímero</h1>
-            <p class="text-muted">Te hago esta página con la intención de dedicarte cada una de las cosas que escribo
-                pensando en ti, con la esperanza de que las veas. Al final, te amo aunque no parezca y perdón pero sigo sin
-                dejarte ir.</p>
+        <div class="px-4 py-5 my-5 text-center">
+            <h1 class="display-5 text-body-light">Todo en esta vida es efímero</h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4">Te hago esta página con la intención de dedicarte cada una de las cosas que escribo
+                    pensando en ti, con la esperanza de que las veas. Al final, te amo aunque no parezca y perdón pero
+                    sigo
+                    sin
+                    dejarte ir.</p>
+            </div>
         </div>
         <hr>
-
         <div class="row mt-5">
-            <div class="col">
-                <h2 class="fw-bold">Escritura</h2>
-                <p>Te he escrito infinidad de cosas, te contaré algo: has estado en mis pensamientos día y noche, te he
-                    escrito demasiado, te he llorado demasiado.</p>
+            <div class="px-4 py-5 my-5 text-center">
+                <h1 class="display-5 text-body-light">Escritura</h1>
+                <div class="col-lg-6 mx-auto">
+                    <p class="lead mb-4">Te he escrito infinidad de cosas, te contaré algo: has estado en mis
+                        pensamientos día y noche, te he
+                        escrito demasiado, te he llorado demasiado.</p>
+                </div>
             </div>
         </div>
 
         <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
             <div class="col">
                 <div class="card h-100">
-                    <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title fw-bold">Título de la tarjeta</h5>
-                        <p class="card-text">Este es un ejemplo de texto más largo dentro de la tarjeta que actúa como un
-                            lead-in natural para contenido adicional.</p>
+                        <h5 class="card-title fw-bold">Adios(emi)</h5>
+                        <p class="card-text">Te extraño y quiero verte pero se que no debo tenerte<br><br>Y me
+                            arrepiento de
+                            no tenerte pero se mujer que tu no eres para mi<br><br>Te conozco de pies a cabeza, de mente
+                            y
+                            alma<br><br>Pero al regresar mi mente habla y se hacen presentes los demonios de nuestro
+                            amor<br><br>Asi que con el alma abierta y el corazon en mil pedazos te dejo
+                            volar<br><br>Esperando
+                            que la ausencia de mi amor te haga recordar ese amor que rechazaste<br><br>Porque cuando lo
+                            intentaste amar, ya era demasiado tarde</p>
                     </div>
                     <div class="card-footer">
-                        <small class="text-muted">Actualizado hace 3 minutos</small>
+                        <small class="text-muted">-leo</small>
+                    </div>
+                </div>
+            </div>
+            <!-- Repite este bloque para cada tarjeta -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Mi forma de amar</h5>
+                        <p class="card-text">Elijo amarte en silencio porque en el silencio no encuentro
+                            rechazo<br><br>Elijo amarte en soledad porque en ella solo a mi me perteneces<br><br>Elijo
+                            pasar mis
+                            dias pensandote y no tocandote<br>
+                            <br>Elijo tu felicidad a costa de la mia<br><br>sencillamente
+                            porque te amo
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">-leo</small>
+                    </div>
+                </div>
+            </div>
+            <!-- Repite este bloque para cada tarjeta -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Fiel creyente</h5>
+                        <p class="card-text">Hay amores que duran para siempre aunque no se toquen, aunque no se besen,
+                            aunque no se vean<br><br>Por eso soy fiel creyente de nuestro amor, porque aunque mis ojos
+                            no te vean<br><br>Todas las noches le pregunto a la luna por ti y me imagino lo que seriamos
+                            en una nube de recuerdos de lo que fuimos</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">-leo</small>
                     </div>
                 </div>
             </div>
             <!-- Repite este bloque para cada tarjeta -->
         </div>
 
-        <hr>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Pensando en ti</h5>
+                        <p class="card-text">No te diré que creo que moriré sin ti
+                            Porque no creo, no creo, no creo, no creo
+                            Tú sabes que soy un guerrero<br><br>No te diré que no puedo vivir sin ti
+                            Porque sí puedo, sí puedo, sí puedo, sí puedo
+                            Sencillamente es que no quiero</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">-Canserbero</small>
+                    </div>
+                </div>
+            </div>
+            <!-- Repite este bloque para cada tarjeta -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">El tipo</h5>
+                        <p class="card-text">Eres el tipo de musica que escucho con los ojos cerrados<br><br>Tienes esa
+                            manera de poner musica en mi cabeza y poesia en el corazon</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">-leo</small>
+                    </div>
+                </div>
+            </div>
+            <!-- Repite este bloque para cada tarjeta -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Quiero</h5>
+                        <p class="card-text">Te quiero contar...<br><br>Te quiero contar como me haces sentir quiero que
+                            te sientes y me cuentes tus dias quiero sentarme y contarte mis noche<br><br>Quiero amanecer
+                            contigo no sin ti quiero dormir a tu lado y que me beses como lo hacias<br><br>pero ya no
+                            estas aqui, ya no mas solo estoy yo junto a mis sueños</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">-leo</small>
+                    </div>
+                </div>
+            </div>
+            <!-- Repite este bloque para cada tarjeta -->
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">11:11</h5>
+                        <p class="card-text">11:11, Lo recuerdas?<br><br>Nuestro numero al que una infinidad de veces le
+                            pedi un futuro a tu lado<br><br>Mi mas grande confidente<br><br>Al que le pedi todo y no me
+                            dio nada...<br><br>Pero que bien me escucho<br><br>Si los numeros hablaran me encantaria que
+                            te contara mi amor por ti, porque aunque no lo creas fue grande<br><br>Tan grande que han
+                            pasado meses y sigues presente</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">-leo</small>
+                    </div>
+                </div>
+            </div>
+            <!-- Repite este bloque para cada tarjeta -->
+        </div>
         <hr>
 
         <div class="row mt-5">
             <div class="col">
                 <h2 class="fw-bold text-center">Canciones</h2>
                 <div class="list-group text-center">
-                    <a href="https://open.spotify.com/track/xxxxxxxxxxxxx" class="list-group-item list-group-item-action"
-                        target="_blank">Nombre de la Canción 1</a>
-                    <a href="https://open.spotify.com/track/yyyyyyyyyyyyy" class="list-group-item list-group-item-action"
-                        target="_blank">Nombre de la Canción 2</a>
+                    <a href="https://open.spotify.com/track/7uQOMsqi4Hnpuoa3o7gZEB?si=8a37b0d865004520"
+                        class="list-group-item list-group-item-action" target="_blank">1. Cafe -> Charles ans</a>
+                    <br>
+                    <a href="https://open.spotify.com/track/5gNzZ7XzGawNJqsaxOs5ZC?si=917c68d690404e76"
+                        class="list-group-item list-group-item-action" target="_blank">2. Andromeda -> Charles ans</a>
                     <!-- Puedes añadir más enlaces a más canciones o listas de reproducción -->
                 </div>
             </div>
         </div>
 
+        <br>
+        <br>
     </div>
+    <hr>
+    <div class="px-4 py-5 my-5 text-center">
+        <h1 class="display-5 text-body-light">No quiere decir que te deje de amar</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">Solo no se como seguir contigo pero me duele dia con dia soy muy egoista por solo
+                pensar en mi sin ponerme en tu lugar.</p>
+        </div>
+    </div>
+    <hr>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -79,4 +229,3 @@
 </body>
 
 </html>
-
